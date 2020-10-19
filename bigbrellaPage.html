@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bigbrella</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    #innpakning {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1780px;
+        margin: 0;
+        align-items: center;
+    }
+
+    #meny {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        box-shadow: 5px 5px 20px rgba(118,113,113,0.7);
+        width: 100%;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #logo {
+        font-family: "Arial Black";
+        font-size: 25px;
+        color: #2e75b6;
+        margin-left: 30px;
+    }
+
+    #boksMenysider {
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        height: 100%;
+        margin-right: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menysider {
+        font-family: Arial;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #2e75b6;
+    }
+
+    .menysider:hover {
+        cursor: pointer;
+        color: #ff7d81;
+    }
+
+    #bigbrellaPage {
+        color: #ff7d81;
+    }
+
+    a {
+        text-decoration: none;
+
+    }
+
+    #delInfo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1610px;
+        margin-top: 70px;
+        align-items: center;
+    }
+
+    #innpakningInfoOgBilde {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 650px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+
+    #innpakningBilder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 300px;
+    }
+
+    #bigbrellaPil {
+        box-shadow: 5px 5px 20px rgba(118,113,113,0.7);
+        height: 100%;
+        width: 300px;
+    }
+
+    #bigbrellaStangBy {
+        box-shadow: 5px 5px 20px rgba(118,113,113,0.7);
+        height: 100%;
+        width: 210px;
+    }
+
+    #bigbrellaVann {
+        box-shadow: 5px 5px 20px rgba(118,113,113,0.7);
+        height: 100%;
+        width: 300px;
+    }
+
+    #info {
+        width: 700px;
+        font-family: Arial;
+        font-size: 20px;
+        line-height: 1.6;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #overskrift {
+        font-weight: normal;
+        font-size: 40px;
+        font-family: "Kristen ITC";
+        color: #ff7d81;
+        margin-top: 50px;
+    }
+
+    #delProductFeatures {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 880px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 40px;
+    }
+
+    .ikonOgTekst {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .overskriftOgTekst {
+        display: flex;
+        flex-direction: column;
+        width: 550px;
+    }
+
+    .underoverskrift {
+        font-family: "Arial Black";
+        font-size: 22px;
+        color: #2e75b6;
+    }
+
+    .infotekst {
+        font-family: Arial;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-top: -12px;
+    }
+
+    #regnsky {
+        width: 160px;
+        height: 160px;
+    }
+
+    #folkVann {
+        width: 160px;
+        height: 160px;
+    }
+
+    #regndraape {
+        width: 140px;
+        height: 120px;
+    }
+
+    #delKontaktinfo {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background-color: #2e75b6;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: Arial;
+        letter-spacing: 2px;
+    }
+
+
+</style>
+
+<body>
+
+<div id="innpakning">
+
+    <div id="meny">
+        <span><a href="forside.html" id="logo">BIGBRELLA</a></span>
+        <div id="boksMenysider">
+            <span><a href="" class="menysider">The problem</a></span>
+            <span><a href="bigbrellaPage.html" class="menysider" id="bigbrellaPage">Bigbrella</a></span>
+        </div>
+    </div>
+
+    <div id="delInfo">
+        <h1 id="overskrift">What is the Bigbrella?</h1>
+        <div id="innpakningInfoOgBilde">
+            <div id="innpakningBilder">
+                <img alt="Picture showing an umbrella going from standing the right way to being up side down like the Bigbrella"
+                     id="bigbrellaPil" src="bigbrellaSnu.svg">
+                <img alt="Picture showing the bigbrella sttatched to a pole standing over the city"
+                     id="bigbrellaStangBy" src="bigbrellaStangBy.svg">
+                <img alt="The Bigbrella with water it has gathered from the clouds"
+                     id="bigbrellaVann" src="bigbrellaVann.svg">
+            </div>
+
+            <span id="info">The Bigbrella is an up side down umbrella created to collect rain water
+            directly from its source. It will be attached to a pole up to 800 meters tall and float above the city.
+            There may arise some issues with the Bigbrella blocking the sun or interfering with birds or planes,
+            but these are issues for future solving.</span>
+        </div>
+
+        <div id="delProductFeatures">
+            <div class="ikonOgTekst">
+                <img class="treIkoner" id="regnsky" alt="Rain cloud." src="ikonRegnsky.png.svg">
+                <div class="overskriftOgTekst">
+                    <h3 class="underoverskrift">COLLECTS RAINWATER</h3>
+                    <p class="infotekst">
+                        The Bigbrella's unique shape and huge size make a perfect rain catcher.
+                        Our company has seen the enormous potential that lays in an everyday object
+                        such as the umbrella. We have utilized its ability to avoid water, and
+                        flipped it upside down to do the opposite; collect water. With the waterproof
+                        material of an umbrella, every tiny rain drop will be safe and secure in the Bigbrella.
+                    </p>
+                </div>
+            </div>
+            <div class="ikonOgTekst">
+                <img class="treIkoner" id="folkVann" alt="Happy people with water." src="ikonFolkRegn.png.svg">
+                <div class="overskriftOgTekst">
+                    <h3 class="underoverskrift">SOLVES WATER DEFICIENCY</h3>
+                    <p class="infotekst">
+                        Because of its size, the Bigbrella can collect water up to x 000 litres.
+                        This revolutionary method prevents drinking water from ending up in the sewers
+                        and never getting used. The water will be transported to villages where
+                        water deficiency is a problem. This way, the Bigbrella is saving thousands of lives.
+                    </p>
+                </div>
+            </div>
+            <div class="ikonOgTekst">
+                <img class="treIkoner" id="regndraape" alt="Raindrop with stars around it to symbolize clean water." src="ikonRentVann.svg">
+                <div class="overskriftOgTekst">
+                    <h3 class="underoverskrift">ENSURES CLEAN WATER</h3>
+                    <p class="infotekst" id="regndraapeTekst">
+                        The Bigbrella collects pure rain water directly from the clouds. During transportation, we use
+                        sterilized tanks to prevent the water from getting dirty. Sanitation is one of our
+                        main values to make sure the Bigbrella water is as pure as when it fell from the sky.
+                        Filthy drinking water has big consequences, which The Bigbrella is determined to solve.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="delKontaktinfo">
+        <span id="kontaktTekst">Osloveien 20, 0015 OSLO | 897 56 456 | bigbrella@gmail.com</span>
+    </div>
+
+</div>
+
+</body>
+
+</html>

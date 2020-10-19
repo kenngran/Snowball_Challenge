@@ -16,12 +16,13 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 1800px;
+        height: 1850px;
         margin: 0;
         align-items: center;
     }
 
     #meny {
+        position: fixed;
         display: flex;
         flex-direction: row;
         background-color: white;
@@ -38,6 +39,7 @@
         height: 700px;
         background-size: cover;
         z-index: -2;
+        margin-top: 70px;
     }
 
     #korallTrekant {
@@ -100,7 +102,7 @@
         margin-left: 30px;
     }
 
-    #boksMenysider {
+    #innpakningMenysider {
         display: flex;
         flex-direction: row;
         width: 400px;
@@ -117,16 +119,20 @@
         color: #2e75b6;
     }
 
+    .menysider:hover {
+        cursor: pointer;
+        color: #ff7d81;
+    }
+
     a {
         text-decoration: none;
-
     }
 
     #delInfo {
         display: flex;
         flex-direction: column;
-        width: 1300px;
-        height: 800px;
+        width: 1400px;
+        height: 850px;
         align-items: center;
         text-align: center;
         font-family: Arial;
@@ -145,7 +151,7 @@
         display: flex;
         flex-direction: row;
         width: 95%;
-        height: 600px;
+        height: 575px;
         justify-content: space-evenly;
         margin-top: 20px;
     }
@@ -154,7 +160,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 320px;
+        width: 350px;
     }
 
     #regnsky {
@@ -180,13 +186,44 @@
     }
 
     .infotekst {
-        font-size: 15px;
+        font-family: Arial;
+        font-size: 17px;
         line-height: 1.6;
         margin-top: -12px;
     }
 
     #regndraapeOverskrift {
         margin-top: 40px;
+    }
+
+    #innpakningKnapper {
+        width: 700px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;justify-content: space-evenly;
+        margin-top: 60px;
+    }
+
+    .knapp {
+        width: 270px;
+        height: 50px;
+        background-color: #ff7d81;
+        font-family: "Arial";
+        font-size: 17px;
+        font-weight: bold;
+        border: solid #d67070 4px;
+        border-radius: 20px;
+    }
+
+    .knappTekst {
+        color: white;
+    }
+
+    .knapp:hover {
+        cursor: pointer;
+        border-color: #a75454;
+        background-color: #d6696c;
     }
 
     #delKontaktinfo {
@@ -202,6 +239,11 @@
         letter-spacing: 2px;
     }
 
+    /*@media only screen and (max-width: 600px) {
+        #innpakningIkonerTekst {
+            display: inline-block;
+        } */
+
 
 </style>
 
@@ -210,10 +252,10 @@
 <div id="innpakning">
 
     <div id="meny">
-        <span id="logo">BIGBRELLA</span>
-        <div id="boksMenysider">
+        <span><a href="forside.html" id="logo">BIGBRELLA</a></span>
+        <div id="innpakningMenysider">
             <span><a href="" class="menysider">The problem</a></span>
-            <span><a href="" class="menysider">Bigbrella</a></span>
+            <span><a href="bigbrellaPage.html" class="menysider">Bigbrella</a></span>
         </div>
     </div>
 
@@ -235,7 +277,7 @@
                 <img class="treIkoner" id="regnsky" alt="Rain cloud." src="ikonRegnsky.png.svg">
                 <h3 class="underoverskrift">COLLECTS RAINWATER</h3>
                 <p class="infotekst">
-                    Bigbrella's unique shape and huge size make a perfect rain catcher.
+                    The Bigbrella's unique shape and huge size make a perfect rain catcher.
                     Our company has seen the enormous potential that lays in an everyday object
                     such as the umbrella. We have utilized its ability to avoid water, and
                     flipped it upside down to do the opposite; collect water. With the waterproof
@@ -256,13 +298,17 @@
                 <img class="treIkoner" id="regndraape" alt="Raindrop with stars around it to symbolize clean water." src="ikonRentVann.svg">
                 <h3 class="underoverskrift" id="regndraapeOverskrift">ENSURES CLEAN WATER</h3>
                 <p class="infotekst" id="regndraapeTekst">
-                    Bigbrella collects pure rain water directly from the clouds. During transportation, we use
+                    The Bigbrella collects pure rain water directly from the clouds. During transportation, we use
                     sterilized tanks to prevent the water from getting dirty. Sanitation is one of our
                     main values to make sure the Bigbrella water is as pure as when it fell from the sky.
-                    Filthy drinking water has big consequences, which Bigbrella is determined to solve.
+                    Filthy drinking water has big consequences, which the Bigbrella is determined to solve.
                 </p>
             </div>
+        </div>
 
+        <div id="innpakningKnapper">
+            <button type="button" class="knapp"><a href="" class="knappTekst">Read more about the problem</a></button>
+            <button type="button" class="knapp"><a href="bigbrellaPage.html" class="knappTekst">Read more about the Bigbrella</a></button>
         </div>
 
     </div>
