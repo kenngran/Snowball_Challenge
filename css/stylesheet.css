@@ -1,6 +1,7 @@
  body {
         margin: 0;
         overflow-x: hidden;
+        font-family: Arial;
     }
 
     #innpakning {
@@ -191,3 +192,65 @@
         color: white;
         font-family: Arial;
         letter-spacing: 2px;
+    }
+
+    #p_over{
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 500px;
+        background-image: url("../hovedbildeUtenParaply.png");
+        background-size: cover;
+    }
+
+    #p_bakgrundsbilde{
+        z-index: -1;
+        height: 400px;
+    }
+
+    #p_over_info{
+        position: absolute;
+        top: 0;
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        margin-top: 50px;
+    }
+    #tekstogbilde{
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+        text-align: left;
+        min-width: 767px;
+        max-width: 926px;
+        margin: auto;
+        padding-top: 20px;
+    }
+    #p_over_tekst{
+        padding-left: 2em;
+        line-height: 1.7em;
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin: 0;
+    }
+    #p_over_bilde{
+        opacity: 0.7;
+    }
+    .blue_tekst{
+        color: #24B8DC;
+    }
+    #p_undertekst{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .p_undertekst_item{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+    }
