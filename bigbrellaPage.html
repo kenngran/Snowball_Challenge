@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bigbrella</title>
+    <title>The Bigbrella</title>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,9 +16,11 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 1780px;
+        height: 2340px;
         margin: 0;
         align-items: center;
+        justify-content: space-between;
+        z-index: -2;
     }
 
     #meny {
@@ -28,24 +30,25 @@
         background-color: white;
         box-shadow: 5px 5px 20px rgba(118,113,113,0.7);
         width: 100%;
-        height: 70px;
         align-items: center;
         justify-content: space-between;
+        z-index: 3;
     }
 
     #logo {
         font-family: "Arial Black";
         font-size: 25px;
         color: #2e75b6;
-        margin-left: 30px;
+        margin: 20px;
+        height: 30px;
     }
 
-    #boksMenysider {
+    #innpakningMenysider {
         display: flex;
         flex-direction: row;
-        width: 400px;
-        height: 100%;
-        margin-right: 20px;
+        width: 500px;
+        height: 30px;
+        margin: 20px;
         justify-content: space-evenly;
         align-items: center;
     }
@@ -75,7 +78,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 1610px;
+        height: 2170px;
         margin-top: 70px;
         align-items: center;
     }
@@ -83,47 +86,60 @@
     #innpakningInfoOgBilde {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 100%;
         height: 650px;
         align-items: center;
         justify-content: space-evenly;
         margin-top: 10px;
     }
 
+    #bakgrunnsbilde {
+        width: 100%;
+        height: 700px;
+        background-image: url("vannmangel.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+
     #innpakningBilder {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        width: 100%;
-        height: 300px;
+        width: 70%;
+        height: 230px;
     }
 
     #bigbrellaPil {
-        box-shadow: 5px 5px 20px rgba(118,113,113,0.7);
         height: 100%;
-        width: 300px;
+        width: 250px;
+        background-color: white;
     }
 
     #bigbrellaStangBy {
-        box-shadow: 5px 5px 20px rgba(118,113,113,0.7);
         height: 100%;
-        width: 210px;
+        width: 160px;
+        background-color: white;
     }
 
     #bigbrellaVann {
-        box-shadow: 5px 5px 20px rgba(118,113,113,0.7);
         height: 100%;
-        width: 300px;
+        width: 250px;
+        background-color: white;
     }
 
     #info {
-        width: 700px;
+        width: 750px;
         font-family: Arial;
         font-size: 20px;
         line-height: 1.6;
         text-align: center;
         margin-top: 20px;
+        color: black;
+        letter-spacing: 2px;
     }
 
     #overskrift {
@@ -148,7 +164,7 @@
         display: flex;
         flex-direction: row;
         width: 70%;
-        height: 200px;
+        height: 250px;
         align-items: center;
         justify-content: space-evenly;
     }
@@ -183,7 +199,7 @@
     }
 
     #regndraape {
-        width: 140px;
+        width: 160px;
         height: 120px;
     }
 
@@ -199,6 +215,156 @@
         letter-spacing: 2px;
     }
 
+    @media only screen and (max-width: 1300px) {
+        #innpakning {
+            height: 2500px;
+        }
+
+        #delInfo {
+            height: 2300px;
+        }
+
+        #delProductFeatures {
+        }
+
+        .ikonOgTekst {
+            width: 80%;
+        }
+
+        .overskriftOgTekst {
+            width: 75%;
+            height: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        #innpakning {
+            height: 2500px;
+        }
+
+        #delInfo {
+            height: 2300px;
+        }
+
+        #bakgrunnsbilde {
+            height: 600px;
+        }
+
+        #delProductFeatures {
+        }
+
+        .ikonOgTekst {
+            width: 100%;
+        }
+
+        .overskriftOgTekst {
+            width: 75%;
+            height: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        #meny {
+            flex-direction: column;
+        }
+
+        #innpakning {
+            height: 2500px;
+        }
+
+        #delInfo {
+            height: 2300px;
+        }
+
+        #bakgrunnsbilde {
+            height: 500px;
+        }
+
+        #delProductFeatures {
+            width: 95%;
+        }
+
+        .ikonOgTekst {
+            width: 100%;
+            height: 280px;
+        }
+
+        .overskriftOgTekst {
+            width: 75%;
+            height: 100%;
+        }
+
+        #info {
+            font-size: 17px;
+            width: 80%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #meny {
+                flex-direction: column;
+            }
+
+            #innpakning {
+                height: 2500px;
+            }
+
+            #delInfo {
+                height: 2300px;
+            }
+
+            #bakgrunnsbilde {
+                height: 500px;
+            }
+
+            #delProductFeatures {
+                width: 95%;
+                height: 2600px;
+            }
+
+            .ikonOgTekst {
+                width: 100%;
+                height: 450px;
+                flex-direction: column;
+            }
+
+            .overskriftOgTekst {
+                width: 90%;
+                height: 70%;
+                align-items: center;
+                text-align: center;
+            }
+
+            #innpakningInfoOgBilde {
+                width: 100%;
+                height: 1000px;
+            }
+
+            #innpakningBilder {
+                height: 200px;
+            }
+
+            #bigbrellaPil {
+                height: 100%;
+                width: 200px;
+            }
+
+            #bigbrellaStangBy {
+                height: 100%;
+                width: 110px;
+            }
+
+            #bigbrellaVann {
+                height: 100%;
+                width: 200px;
+            }
+
+            #delKontaktinfo {
+                font-size: 12px;
+            }
+        }
+
+
+    }
 
 </style>
 
@@ -208,14 +374,16 @@
 
     <div id="meny">
         <span><a href="forside.html" id="logo">BIGBRELLA</a></span>
-        <div id="boksMenysider">
-            <span><a href="problem.html" class="menysider">The problem</a></span>
+        <div id="innpakningMenysider">
+            <span><a href="" class="menysider">The problem</a></span>
             <span><a href="bigbrellaPage.html" class="menysider" id="bigbrellaPage">Bigbrella</a></span>
+            <span><a href="" class="menysider">References</a></span>
         </div>
     </div>
 
     <div id="delInfo">
         <h1 id="overskrift">What is the Bigbrella?</h1>
+
         <div id="innpakningInfoOgBilde">
             <div id="innpakningBilder">
                 <img alt="Picture showing an umbrella going from standing the right way to being up side down like the Bigbrella"
@@ -231,6 +399,8 @@
             There may arise some issues with the Bigbrella blocking the sun or interfering with birds or planes,
             but these are issues for future solving.</span>
         </div>
+
+        <div id="bakgrunnsbilde"></div>
 
         <div id="delProductFeatures">
             <div class="ikonOgTekst">
@@ -249,18 +419,18 @@
             <div class="ikonOgTekst">
                 <img class="treIkoner" id="folkVann" alt="Happy people with water." src="ikonFolkRegn.png.svg">
                 <div class="overskriftOgTekst">
-                    <h3 class="underoverskrift">SOLVES WATER DEFICIENCY</h3>
+                    <h3 class="underoverskrift">SOLVES WATER SCARCITY</h3>
                     <p class="infotekst">
                         Because of its size, the Bigbrella can collect water up to x 000 litres.
                         This revolutionary method prevents drinking water from ending up in the sewers
                         and never getting used. The water will be transported to villages where
-                        water deficiency is a problem. This way, the Bigbrella is saving thousands of lives.
+                        water scarcity is a problem. This way, the Bigbrella is saving thousands of lives.
                     </p>
                 </div>
             </div>
             <div class="ikonOgTekst">
                 <img class="treIkoner" id="regndraape" alt="Raindrop with stars around it to symbolize clean water." src="ikonRentVann.svg">
-                <div class="overskriftOgTekst">
+                <div class="overskriftOgTekst" id="overskriftTekstRegndraape">
                     <h3 class="underoverskrift">ENSURES CLEAN WATER</h3>
                     <p class="infotekst" id="regndraapeTekst">
                         The Bigbrella collects pure rain water directly from the clouds. During transportation, we use
