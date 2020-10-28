@@ -189,6 +189,31 @@
     }
 
     @media screen and (max-width: 1000px){
+        .flex-row{
+            flex-direction: column;
+        }
+
+        .flex-row img{
+            width: 400px;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #p_undertekst{
+            min-width: 400px
+        }
+        #tekstogbilde{
+            min-width: 440px;
+        }
+
+        #p_over{
+            height: 500px;
+        }
+    }
+
+    @media screen and (max-width: 800px){
         #meny {
             flex-direction: column;
             height: 106px;
@@ -196,17 +221,12 @@
         #overskrift{
             margin-top: 80px;
         }
-        .flex-row{
-            flex-direction: column;
+       #delKontaktinfo {
+            font-size: 12px;
         }
-
-        .flex-row img{
-            height: 100px;
-            width: 70%;
-            margin-top: 20px;
-            margin-bottom: 5px;
+        #p_over{
+            height: 600px;
         }
-        #p_undertekst{
-            min-width: 400px
+        #tekstogbilde img{
+            height: 120px;
         }
-    }
